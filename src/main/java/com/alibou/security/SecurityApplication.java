@@ -56,7 +56,17 @@ public class SecurityApplication {
 					.password("password")
 					.role(Role.paysan)
 					.build();
-			System.out.println("Client paysan: " + service.register(client).getAccessToken());
+			System.out.println("Paysan token: " + service.register(paysan).getAccessToken());
+
+			var employe = RegisterRequest.builder()
+					.nom("Niass")
+					.prenom("Astou")
+					.contact("773214565")
+					.email("employe@mail.com")
+					.password("password")
+					.role(Role.employe)
+					.build();
+			System.out.println("Employe token: " + service.register(employe).getAccessToken());
 		};
 	}
 }

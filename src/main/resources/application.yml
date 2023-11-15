@@ -22,6 +22,19 @@ spring:
         format_sql: true
     database: mysql
     database-platform: org.hibernate.dialect.MySQLDialect
+
+
+  mail:
+    host: smtp.gmail.com #64.233.167.108
+    port: 587
+    username: agrimanagerplus@gmail.com
+    password: mtsitzrxppkznrxk
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 #
 
 #  jpa:

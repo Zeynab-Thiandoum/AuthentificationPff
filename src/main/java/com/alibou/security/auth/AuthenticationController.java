@@ -23,6 +23,7 @@ public class AuthenticationController {
     return ResponseEntity.ok(service.register(request));
   }
   @PostMapping("/authenticate")
+  @CrossOrigin("http://localhost:4200")
   public ResponseEntity<AuthenticationResponse> authenticate(
       @RequestBody AuthenticationRequest request
   ) {
@@ -39,4 +40,3 @@ public class AuthenticationController {
 
 
 }
-  

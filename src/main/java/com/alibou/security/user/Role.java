@@ -21,6 +21,10 @@ import static com.alibou.security.user.Permission.paysan_CREATE;
 import static com.alibou.security.user.Permission.paysan_DELETE;
 import static com.alibou.security.user.Permission.paysan_READ;
 import static com.alibou.security.user.Permission.paysan_UPDATE;
+import static com.alibou.security.user.Permission.employe_CREATE;
+import static com.alibou.security.user.Permission.employe_DELETE;
+import static com.alibou.security.user.Permission.employe_READ;
+import static com.alibou.security.user.Permission.employe_UPDATE;
 @RequiredArgsConstructor
 public enum Role {
 
@@ -54,6 +58,15 @@ public enum Role {
           paysan_DELETE,
           paysan_READ,
           paysan_UPDATE
+          )
+  ),
+
+  employe(
+          Set.of(
+          employe_CREATE,
+          employe_DELETE,
+          employe_READ,
+          employe_UPDATE
           )
   )
 

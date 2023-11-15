@@ -18,7 +18,13 @@ public enum Permission {
     paysan_READ("paysan:read"),
     paysan_UPDATE("paysan:update"),
     paysan_CREATE("paysan:create"),
-    paysan_DELETE("paysan:delete")
+    paysan_DELETE("paysan:delete"),
+
+
+    employe_READ("employe:read"),
+    employe_UPDATE("employe:update"),
+    employe_CREATE("employe:create"),
+    employe_DELETE("employe:delete")
     ;
 
     @Getter
